@@ -31,7 +31,7 @@ func handleTranslation(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	apiKey := "AIzaSyDBSTZPv3_ENbI7Ty-NkcQkBVIwEgGfkls"
+	apiKey := "" // "API_KEY de Google Translate
 	ctx := context.Background()
 	client, err := translate.NewService(ctx, option.WithAPIKey(apiKey))
 
